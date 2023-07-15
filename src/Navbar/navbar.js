@@ -1,15 +1,9 @@
 import React from 'react';
+import { Outlet, Navigate } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <footer>
-        <p>
-          &copy; {new Date().getFullYear()} Omega Banking. All rights reserved.
-        </p>
-      </footer>
-    </div>
-  );
+function PrivateRoutes() {
+  let auth = { token: true };
+  return auth.token ? <Outlet /> : <Navigate to="/login" />;
 }
 
-export default App;
+export default PrivateRoutes;

@@ -3,6 +3,7 @@ import './App.css';
 import LoginPage from './login/login';
 import RegistrationForm from './registration/registration';
 import HomePage from './home/home';
+import PrivateRoutes from './Navbar/navbar';
 import Customerdetails from './admin/customerdetails';
 import Benificiarydetails from './users/benificiary';
 import { NavLink, Routes, Route } from 'react-router-dom';
@@ -12,18 +13,22 @@ function App() {
     <div className="App">
       <div>
         <header>
-          <img
-            src="https://www.vhv.rs/dpng/d/427-4273719_random-logo-transparent-background-hd-png-download.png"
-            height="60px"
-          />
-          <h1>Omega Banking</h1>
+          <div className="logo">
+            <img
+              src="https://www.vhv.rs/dpng/d/427-4273719_random-logo-transparent-background-hd-png-download.png"
+              height="60px"
+            />
+            <h1>Omega Banking</h1>
+          </div>
           <nav>
             <ul>
               <li>
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/accounts">Accounts</a>
+                <NavLink to="/accounts">
+                  <a>Accounts</a>
+                </NavLink>
               </li>
               <li>
                 <NavLink to="/benificiaries">
@@ -55,9 +60,11 @@ function App() {
             <Routes>
               <Route path="" element={<HomePage />} />
               <Route path="/login" element={<LoginPage />} />
-              <Route path="/login" element={<LoginPage />} />
               <Route path="/registration" element={<RegistrationForm />} />
-              <Route path="/benificiaries" element={<Benificiarydetails />} />
+              <Route element={<PrivateRoutes />}>
+                <Route path="/accounts" element={<Customerdetails />} />
+                <Route path="/benificiaries" element={<Benificiarydetails />} />
+              </Route>
             </Routes>
           </div>
         </main>
