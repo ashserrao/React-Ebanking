@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# React-Ebanking - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **React-Ebanking** project is the frontend of an e-banking application built using **React.js**. It provides an intuitive user interface that interacts seamlessly with the backend services created with **Spring Boot**. The frontend handles user interactions, displays data, and ensures a user-friendly experience for both admins and customers.
 
-In the project directory, you can run:
+This application aims to streamline e-banking tasks, allowing users to manage accounts, access support, and perform banking operations efficiently. The use of modern frontend technologies ensures a responsive and dynamic user interface.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Highlights
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The **React-Ebanking** project is the frontend of an e-banking application built using **React.js**. It provides an intuitive user interface that interacts seamlessly with the backend services created with **Spring Boot**. The frontend handles user interactions, displays data, and ensures a user-friendly experience for both admins and customers.
 
-### `npm test`
+This application aims to streamline e-banking tasks, allowing users to manage accounts, access support, and perform banking operations efficiently. The use of modern frontend technologies ensures a responsive and dynamic user interface.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **User Registration and Login**:
+  - Forms for new user registration and existing user login.
+- **Admin Dashboard**:
+  - Profile management.
+  - Customer profile management features.
+- **Customer Dashboard**:
+  - Profile management.
+  - Adding and managing beneficiaries.
+  - Accessing contact support details.
+  - Managing subscribed services.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **React.js**: Library for building the user interface.
+- **Redux**: For state management.
+- **Axios**: For API requests to the backend.
+- **CSS/Styled Components**: For styling.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js and npm
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/ashserrao/React-Ebanking.git
+2. Navigate to the project directory:
+   ```bash
+   cd React-Ebanking
+3. Install dependencies:
+   ```bash
+   npm install
+4. Start the development server:
+    ```bash
+   npm start
+    
+### Documentation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For further understanding of the backend, check out the [Ebankingapp README](https://github.com/ashserrao/Ebankingapp).
 
-### Code Splitting
+### Screenshots
+## Logged in as user
+![image](https://github.com/user-attachments/assets/7ae7d883-c1f0-4eac-806d-92008fbc91a3)
+![image](https://github.com/user-attachments/assets/df076776-292e-461f-9656-11b09196b104)
+![image](https://github.com/user-attachments/assets/ad6adc3e-d051-463f-aef8-aaa0644e9bd4)
+![image](https://github.com/user-attachments/assets/bd8bc7c0-eeb0-49b7-9e00-4a7a6bb7e7a5)
+![image](https://github.com/user-attachments/assets/8358b1ed-dc2d-46f9-a1c6-d5f2d5e95d5d)
+![image](https://github.com/user-attachments/assets/cae31418-c289-4345-8ae9-405553f256a0)
+## Logged in as admin
+![image](https://github.com/user-attachments/assets/3f2b9bb0-8cbb-4862-a6bf-8f3807eb0bcf)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Anush Serrao
