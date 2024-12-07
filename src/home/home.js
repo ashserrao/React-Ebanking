@@ -1,16 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { useNavigate } from 'react-router-dom';
+import './home.css';
 
-const HomePage = () => {
+const Home = () => {
+  const navigate = useNavigate();
+
+  const handleSignIn = () => {
+    navigate('/signin'); // Replace '/signin' with the correct path to your sign-in page
+  };
+
+  const handleSignUp = () => {
+    navigate('/signup'); // Replace '/signup' with the correct path to your sign-up page
+  };
+
   return (
-    <div>
-      <img
-        src="https://media.licdn.com/dms/image/C4D12AQFvR6webwTsKw/article-cover_image-shrink_720_1280/0/1533823206296?e=2147483647&v=beta&t=wZN4Py-PYNTGQa6WCk1HVhivWC8SWcoIYFN1LdI1b9A"
-        width="100%"
-        height="auto"
-      />
-    </div>
+    <main >
+      
+      <div>
+      
+      <h2>Secure and Convenient Online Banking</h2>
+      <p>Manage your accounts and perform transactions from the comfort of your home.</p>
+      <button onClick={handleSignIn}>Sign In</button>
+      <button onClick={handleSignUp}>Sign Up</button>
+      </div>
+
+    </main>
   );
 };
 
-export default HomePage;
+export default Home;
